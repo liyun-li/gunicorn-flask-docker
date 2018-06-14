@@ -1,0 +1,5 @@
+python-dotenv
+pathlib
+pycountry
+geoip2
+mysql-connector
