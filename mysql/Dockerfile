@@ -1,5 +1,4 @@
 FROM fdsa/gunicorn-flask:base
 
-RUN apk add --no-cache mysql-dev
-COPY r.txt /tmp/
-RUN pip install mysql-connector
+RUN apk add --no-cache mariadb-libs mariadb-dev
+RUN pip install pymysql mysql-connector
